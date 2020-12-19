@@ -516,7 +516,17 @@ p {
 @media (max-width:767px) {}
 
 
+.countainercarousel {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
 
+/* Mobile */
+@media (max-width:767px) {}
 
 .footer-content {
     background-color: #0c162a;
@@ -540,3 +550,8 @@ p {
 
 /* Mobile */
 @media (max-width:767px) {}
+
+
+
+/* 
+slider bot */
