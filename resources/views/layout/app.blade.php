@@ -9,13 +9,14 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
     
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/glide.core.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/glide.theme.min.css') }}" rel="stylesheet">
 
 </head>
 
@@ -51,7 +52,7 @@
                            <a class="nav-link " href="#">Case Studies</a>
                        </li>
                        <li class="nav-item navbar-right">
-                           <a class="nav-link " href="#">Blog</a>
+                           <a class="nav-link " href="/blog">Blog</a>
                        </li>
                    </ul>
                </div>
@@ -65,6 +66,13 @@
         @yield('content')
     </main>
 
+    <script>
+        const config = {
+            type: "carousel",
+            perView: 3
+        };
+        new Glide('.glide', config).mount()
+    </script>
 </body>
-    
+
 </html>

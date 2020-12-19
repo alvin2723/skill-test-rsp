@@ -19,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'LoginController@index')->name('login');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/login/submit', 'LoginController@submitLogin');
+Route::get('/blog', 'BlogController@index');
