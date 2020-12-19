@@ -6527,12 +6527,18 @@ h6,
 
 h1,
 .h1 {
-    font-size: 2.25rem;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 3.125rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 h2,
 .h2 {
-    font-size: 1.8rem;
+    font-size: 2.125rem;
+    font-weight: 700;
+    line-height: 3.125rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 h3,
@@ -6724,6 +6730,7 @@ pre code {
 }
 
 @media (min-width: 576px) {
+
 
     .container,
     .container-sm {

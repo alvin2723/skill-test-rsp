@@ -2,48 +2,42 @@
 
 
 @section('content')
-     <div class="wrap">
-         
-         <header class="header" style="background-image:url('{{asset('image/homepage.jpg')}}');">
-            <div class="overlay">
-                
-            </div>
-         </header>
-         !-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="{{asset('image/refactorylogo.png')}}" alt="" width="125" height="52">
-                    </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active navbar-right">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item navbar-right">
-                            <a class="nav-link" href="#">Courses</a>
-                        </li>
-                        <li class="nav-item navbar-right">
-                            <a class="nav-link " href="#">Custom Trainings</a>
-                        </li>
-                        <li class="nav-item navbar-right">
-                            <a class="nav-link " href="#">Case Studies</a>
-                        </li>
-                        <li class="nav-item navbar-right">
-                            <a class="nav-link " href="#">Blog</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-         
-     </div>
-  
-    <main class="container">
-       
-    </main>
 
+    <div class="head-container">
+        <div class="row">
+            <div class="col-md-10 col-sm-12">
+                <div class="row head-content">
+                    <div class="col-md-12 head-header">
+                        <h1>
+                            Empowering <span class="people">People</span> Through Programming
+                        </h1>
+                    </div>
+                    <div class="col-md-12 head-desc">
+                        <p>
+                            Refactory adalah perusahaan edukasi dan teknologi yang menyediakan layanan lengkap berupa course maupun custom training yang materinya dapat disesuaikan dengan kebutuhan teknologi dan bisnis perusahaan Anda.
+                        </p>
+                    </div>
+                </div>
+                <div class="row head-button">
+                    <div class="col-md-6 col-sm-12">
+                        <a href="" type="button" class="btn-left">
+                            sdfsdfsdf
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <a href="" type="button" class="btn-right">
+                            sdfsdfsdf
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-2 col-sm-12">
+
+            </div>
+           
+        </div>
+    </div>
+    
 @endsection
