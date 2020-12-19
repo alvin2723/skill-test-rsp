@@ -16,7 +16,7 @@ p {
 
 /* Header */
 .header {
-    min-height: 637px;
+    min-height: 700px;
     background-position: center;
     background-repeat: no-repeat;
     -ms-background-size: cover;
@@ -55,15 +55,13 @@ p {
 
 /* Header Content */
 .head-container {
-    z-index: 100;
+
     position: absolute;
-    top: 15%;
+    top: 20%;
+    left: 22%;
     width: 55%;
-    margin-left: auto;
-    margin-right: auto;
     padding: 0 12% 0 4%;
     color: #fff;
-
 }
 
 .head-content {
@@ -111,10 +109,105 @@ p {
     fill: #fff;
     text-align: center;
     background-color: rgba(228, 136, 0, 0);
-    background-color: none;
     height: 40px;
 }
 
+
+/* Partner */
+.partner {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 0.625rem;
+
+}
+
+.partner .partner-text {
+    font-size: 1.125rem;
+    line-height: 2.25rem;
+    padding-bottom: 1rem;
+}
+
+.partner .partner-widget {
+    padding: 2rem 0;
+    width: 100%;
+    background-color: rgba(0, 75, 102, 0.4);
+}
+
+
+/* Body content */
+.body-container {
+
+    margin-top: 80px;
+
+}
+
+/* Bantu */
+.body-container .bantu {
+    position: relative;
+    margin-bottom: 3.125rem;
+}
+
+.bantu .bantu-desc {
+    padding: 0.625rem 2.5rem;
+}
+
+.body-container .bantu h2 {
+    margin-bottom: 3.125rem;
+}
+
+/* Insight */
+.body-container .insight {
+    position: relative;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+    padding: 3.125rem 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: block;
+    top: 0;
+
+
+}
+
+/* lihat */
+.body-container .lihat {
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+
+}
+
+.lihat .link-lihat {
+    text-decoration: none;
+}
+
+.lihat .link-lihat:hover {
+    color: #e48800;
+}
+
+/* seen on */
+.body-container .seen-on {
+    background-color: #F4F5F6;
+    margin-top: 3.125rem;
+    padding-top: 3.125rem;
+}
+
+.seen-on .widget {
+
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0.5rem;
+}
 
 
 /* Mobile */
@@ -161,6 +254,8 @@ p {
     .btn-left {
         margin-bottom: 2rem;
     }
+
+
 
 
 }
