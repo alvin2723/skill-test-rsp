@@ -1,12 +1,12 @@
 @extends('layout.app')
 
-
 @section('content')
-    <div class="wrap">
+<title>Home - Refactory</title>
+    <header>
 
         {{-- Background Header Image --}}
-        <header class="header" style="background-image:url('{{asset('image/homepage.jpg')}}');">
-            <div class="overlay"></div>
+        <div class="header-image" style="background-image:url('{{asset('image/homepage.jpg')}}');">
+            <div class="overlay" style="background-image: linear-gradient(110deg, #00256C 10%, #04ACA4 90%);"></div>
              {{-- Header Content --}}
             <div class="head-container">
                 <div class="row">
@@ -14,7 +14,7 @@
                         <div class="row head-content">
                             <div class="col-md-12 head-header">
                                 <h1>
-                                    Empowering <span class="people">People</span> Through Programming
+                                    Empowering <span class="orange-text">People</span> Through Programming
                                 </h1>
                             </div>
                             <div class="col-md-12 head-desc">
@@ -26,14 +26,14 @@
                         <div class="row head-button">
                             <div class="col-md-6 col-sm-12">
                                 <a href="" type="button" class="btn-left">
-                                    <span class="btn-text">
+                                    <span>
                                         Temukan Solusi Anda
                                     </span>
                                 </a>
                             </div>
                             <div class="col-md-6 col-sm-12">
                                 <a href="" type="button" class="btn-right">
-                                    <span class="btn-text">
+                                    <span>
                                         Tingkatkan Skill Anda
                                     </span>
                                 </a>
@@ -51,8 +51,7 @@
                     sdfsdfsdf
                 </div>
             </div>
-
-        </header>
+        </div>
 
         {{-- Navigation --}}
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -66,49 +65,48 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active navbar-right">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="/home">Home</a>
                         </li>
                         <li class="nav-item navbar-right">
-                            <a class="nav-link" href="#">Courses</a>
+                            <a class="nav-link" href="/courses">Courses</a>
                         </li>
                         <li class="nav-item navbar-right">
-                            <a class="nav-link " href="#">Custom Trainings</a>
+                            <a class="nav-link" href="#">Custom Trainings</a>
                         </li>
                         <li class="nav-item navbar-right">
-                            <a class="nav-link " href="#">Case Studies</a>
+                            <a class="nav-link" href="#">Case Studies</a>
                         </li>
                         <li class="nav-item navbar-right">
-                            <a class="nav-link " href="/blog">Blog</a>
+                            <a class="nav-link" href="/blog">Blog</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         
-    </div>
-    
-    <main>
-        {{-- Body Content --}}
-        <div class="body-container text-center">
+    </header>
 
-            {{-- Refactory Bantu --}}
-            <div class="container bantu">
+    {{-- Body Content --}}
+    <main class="body-container text-center">
+    
+        {{-- First Content --}}
+        <div class="container first-content">
                 <h2>Apa Yang Refactory dapat Bantu?</h2>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-12">
                         <div class="row">
                             <div class="col-md-12">
                                 <img src="{{asset('image/material_approval.png')}}" alt=""class="pb-3">
                             </div>
                             <div class="col-md-12">
                                 <h3>Memperkuat Tim Engineer Anda</h3>
-                                <p class="bantu-desc">
+                                <p class="first-content-desc">
                                     Bisnis di jaman modern membutuhkan keterampilan pengembangan terbaik untuk meningkatkan skala produk. Kami dapat mempersiapkan course dan juga dapat menyediakan tim yang menangani kebutuhan digital Anda.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-12">
                         <div class="row">
                             <div class="col-md-12">
                                 <img src="{{asset('image/material_bolt.png')}}" alt="" class="pb-3">
@@ -120,53 +118,52 @@
                         </div>
                     </div>
                 </div>
-            </div>
+        </div>
 
-            {{-- Insight --}}
-            <div class="insight" style="background-image:url('{{asset('image/ripple-bg.png')}}')">
-                <div class="container">
-                    <h5>INSIGHT TERBARU</h5>
-                    <h2>Knowledge Sharing</h2>
-                </div>
-            </div>
-
-            {{-- lihat --}}
-            <div class="container lihat">
-                <a href="" class="link-lihat">Lihat Semua <i aria-hidden="true" class="fas fa-arrow-right"></i></a>  
-            </div>
-
-            {{-- seen on --}}
-            <div class="seen-on">
-                <div class="container">
-                    <h2>AS SEEN ON</h2>
-                    <div class="widget">
-                       <div>
-                            <img src="{{asset('image/material_approval.png')}}" alt=""class="pb-3">
-                       </div>
-                       <div>
-                        <img src="{{asset('image/material_approval.png')}}" alt=""class="pb-3">
-                       </div>
-                       <div>
-                        <img src="{{asset('image/material_approval.png')}}" alt=""class="pb-3">
-                        </div>
-                        <div>
-                            <img src="{{asset('image/material_approval.png')}}" alt=""class="pb-3">
-                        </div>
-                        <div>
-                            <img src="{{asset('image/material_approval.png')}}" alt=""class="pb-3">
-                       </div>
-                       <div>
-                        <img src="{{asset('image/material_approval.png')}}" alt=""class="pb-3">
-                       </div>
-                   
-                    </div>
-                </div>
+            {{-- Second Content --}}
+        <div class="second-content" style="background-image:url('{{asset('image/ripple-bg.png')}}')">
+            <div class="container">
+                <h5>INSIGHT TERBARU</h5>
+                <h2>Knowledge Sharing</h2>
             </div>
         </div>
 
+            {{-- Third Content --}}
+        <div class="container third-content">
+            <a href="" class="third-content-link">Lihat Semua <i aria-hidden="true" class="fas fa-arrow-right"></i></a>  
+        </div>
 
-
+            {{-- Fourth Content --}}
+        <div class="fourth-content">
+            <div class="container">
+                <h2>AS SEEN ON</h2>
+                <div class="widget">
+                    <div>
+                            <img src="{{asset('image/material_approval.png')}}" alt=""class="pb-3">
+                    </div>
+                    <div>
+                        <img src="{{asset('image/material_approval.png')}}" alt=""class="pb-3">
+                    </div>
+                    <div>
+                        <img src="{{asset('image/material_approval.png')}}" alt=""class="pb-3">
+                    </div>
+                    <div>
+                        <img src="{{asset('image/material_approval.png')}}" alt=""class="pb-3">
+                    </div>
+                    <div>
+                        <img src="{{asset('image/material_approval.png')}}" alt=""class="pb-3">
+                    </div>
+                    <div>
+                        <img src="{{asset('image/material_approval.png')}}" alt=""class="pb-3">
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
     </main>
+
+    <footer>
+        @include('layout.footer')
+    </footer>
    
-    
 @endsection

@@ -17,6 +17,13 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/', 'LoginController@index')->name('login');
-Route::get('/home', 'HomeController@index')->name('home');
+
 Route::post('/login/submit', 'LoginController@submitLogin');
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/courses', 'CourseController@index')->name('courses');
+
+Route::get('/list-courses', 'ListCourseController@index')->name('list-courses');
+
 Route::get('/blog', 'BlogController@index');

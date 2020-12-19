@@ -3,6 +3,7 @@ body {
     margin: 0;
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
 }
 
 p {
@@ -12,11 +13,55 @@ p {
     line-height: 1.875rem;
 }
 
+.orange-text {
+    color: #e48800;
+}
 
+.btn-left {
+    text-decoration: none;
+    width: 100%;
+    border-radius: 20px;
+    padding: 0.625rem 2.5rem;
+    color: #fff;
+    background-color: #e48800;
+
+}
+
+.btn-left:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-right {
+    text-decoration: none;
+    width: 100%;
+    border-radius: 20px;
+    border: solid #e48800;
+    border-width: 1px;
+    padding: 0.625rem 2.5rem;
+    color: #fff;
+    background-color: rgba(228, 136, 0, 0);
+}
+
+.btn-right:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #e48800;
+}
+
+
+.btn-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+}
 
 /* Header */
-.header {
-    min-height: 700px;
+.header-image {
+    min-height: 673px;
     background-position: center;
     background-repeat: no-repeat;
     -ms-background-size: cover;
@@ -31,7 +76,7 @@ p {
 }
 
 .overlay {
-    background-image: linear-gradient(110deg, #00256C 10%, #04ACA4 90%);
+
     background-color: transparent;
     opacity: 0.75;
     position: absolute;
@@ -68,9 +113,7 @@ p {
     padding-left: 2rem;
 }
 
-.people {
-    color: #e48800;
-}
+
 
 .head-desc {
     margin-top: 1.25rem;
@@ -79,39 +122,12 @@ p {
 .head-button {
     margin-top: 1.25rem;
     margin-right: 15%;
-
-}
-
-.btn-left {
     font-family: 'Montserrat', sans-serif;
-    width: 100%;
     font-size: 14px;
     font-weight: 500;
-    border-radius: 20px;
-    padding: 0.625rem 2.5rem;
-    color: #fff;
-    background-color: #e48800;
     text-align: center;
     height: 40px;
-
 }
-
-.btn-right {
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 20px;
-    border: solid #e48800;
-    border-width: 1px;
-    padding: 0.625rem 2.5rem;
-    color: #fff;
-    fill: #fff;
-    text-align: center;
-    background-color: rgba(228, 136, 0, 0);
-    height: 40px;
-}
-
 
 /* Partner */
 .partner {
@@ -133,80 +149,6 @@ p {
     padding: 2rem 0;
     width: 100%;
     background-color: rgba(0, 75, 102, 0.4);
-}
-
-
-/* Body content */
-.body-container {
-
-    margin-top: 80px;
-
-}
-
-/* Bantu */
-.body-container .bantu {
-    position: relative;
-    margin-bottom: 3.125rem;
-}
-
-.bantu .bantu-desc {
-    padding: 0.625rem 2.5rem;
-}
-
-.body-container .bantu h2 {
-    margin-bottom: 3.125rem;
-}
-
-/* Insight */
-.body-container .insight {
-    position: relative;
-    margin-top: 3.125rem;
-    margin-bottom: 3.125rem;
-    padding: 3.125rem 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    display: block;
-    top: 0;
-
-
-}
-
-/* lihat */
-.body-container .lihat {
-    margin-top: 3.125rem;
-    margin-bottom: 3.125rem;
-
-}
-
-.lihat .link-lihat {
-    text-decoration: none;
-}
-
-.lihat .link-lihat:hover {
-    color: #e48800;
-}
-
-/* seen on */
-.body-container .seen-on {
-    background-color: #F4F5F6;
-    margin-top: 3.125rem;
-    padding-top: 3.125rem;
-}
-
-.seen-on .widget {
-
-
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 80px 0.5rem;
 }
 
 
@@ -255,7 +197,346 @@ p {
         margin-bottom: 2rem;
     }
 
+}
 
+
+
+/* first content */
+.body-container .first-content {
+    margin-top: 80px;
+    position: relative;
+    margin-bottom: 3.125rem;
+}
+
+.first-content .first-content-desc {
+    padding: 0.625rem 2.5rem;
+}
+
+.body-container .first-content h2 {
+    margin-bottom: 3.125rem;
+}
+
+
+/* second content */
+.body-container .second-content {
+    position: relative;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+    padding: 3.125rem 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: block;
+    top: 0;
+
+}
+
+
+/* third content */
+.body-container .third-content {
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+
+}
+
+.third-content .third-content-link {
+    text-decoration: none;
+}
+
+.third-content .third-content-link:hover {
+    color: #e48800;
+}
+
+/* seen on */
+.body-container .fourth-content {
+    background-color: #F4F5F6;
+    margin-top: 3.125rem;
+    padding-top: 3.125rem;
+}
+
+.fourth-content .widget {
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0.5rem;
+}
+
+
+/* Mobile */
+@media (max-width:767px) {}
+
+/* course header */
+.course-container {
+    width: 100%;
+    padding-top: 20%;
+    padding-right: 20%;
+    padding-left: 15%;
+    text-align: center;
+    color: white;
+
+}
+
+.course-container .head-header .course-header-text {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3.125rem;
 
 
 }
+
+.course-header-text .course-text-span {
+    color: #e48800;
+    font-weight: 800;
+
+}
+
+.course-container .course-button {
+    width: 100%;
+    margin-top: 1.25rem;
+    margin-left: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    height: 40px;
+
+}
+
+/* course body  */
+.body-container .first-course {
+    margin-top: 80px;
+    position: relative;
+    margin-bottom: 3.125rem;
+
+
+}
+
+/* first course content */
+.first-course-header {
+    margin-top: 2rem;
+    padding: 0 30% 10% 15%;
+
+}
+
+.first-course-header h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+}
+
+.first-course-button {
+    width: 35%;
+    border-radius: 20px;
+    margin-left: 15%;
+    padding: 0.625rem 2.5rem;
+    color: #fff;
+    background-color: #e48800;
+    text-align: center;
+}
+
+/* second course content */
+
+.body-container .second-course {
+
+    position: relative;
+    padding-bottom: 3.125rem;
+    background-color: #F4F5F6;
+}
+
+.second-course .second-course-left {
+    padding-left: 8%;
+}
+
+.second-course .second-course-left .second-left-header {
+    padding-top: 80px;
+
+}
+
+.second-left-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+
+}
+
+.second-course .second-course-left .second-left-desc {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.second-left-desc p {
+    font-family: "Montserrat", Sans-serif;
+    color: rgba(11, 22, 43, 0.6);
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+
+.second-course .second-course-right {
+    padding-left: 10%;
+}
+
+/* Second Course Bottom */
+
+.second-course-bottom .second-bottom-header {
+    padding-top: 5%;
+}
+
+.second-bottom-header h4 {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: 1.5px;
+    text-decoration: none solid rgb(11, 22, 43);
+
+}
+
+.second-bottom-header h2 {
+    padding-top: 10px;
+    font-size: 2.125rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: 1.5px;
+    text-decoration: none solid rgb(11, 22, 43);
+}
+
+.second-bottom-desc p {
+    padding-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+    letter-spacing: 1.5px;
+    text-decoration: none solid rgb(11, 22, 43);
+}
+
+.second-bottom-desc p span {
+    font-weight: 700;
+}
+
+
+
+
+
+/* fourth course */
+.fourth-course {
+    background-image: linear-gradient(90deg, #127BCA 0%, #35B4AE 100%);
+    background-color: transparent;
+    padding: 3.125rem 20%;
+}
+
+.fourth-course .fourth-course-left {
+    padding-left: 25%;
+    padding-top: 5px;
+}
+
+.fourth-course-left h3 {
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-weight: 400;
+    text-decoration: none solid rgb(255, 255, 255);
+
+}
+
+.fourth-course .fourth-course-right {
+    padding-right: 20%;
+}
+
+
+.fourth-course-button {
+    width: 80%;
+    border-radius: 20px;
+    margin-left: 15%;
+    padding: 0.625rem 2.5rem;
+    color: #fff;
+    background-color: #e48800;
+    text-align: center;
+}
+
+/* Fifth course */
+.fifth-course {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.fifth-course-top h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    letter-spacing: 1.5px;
+    color: #e48800;
+}
+
+.fifth-course-top h3 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+}
+
+.fifth-course .fifth-course-bottom {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.fifth-course-button {
+    width: 18%;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.625rem 2.5rem;
+    color: #fff;
+    background-color: #e48800;
+    text-align: center;
+}
+
+/* Mobile */
+@media (max-width:767px) {}
+
+
+
+/* List Course */
+.list-course {
+    position: relative;
+    top: 10%;
+}
+
+/* Mobile */
+@media (max-width:767px) {}
+
+
+
+
+.footer-content {
+    background-color: #0c162a;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.footer-content ul li {
+    list-style-type: none;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-link .btn-text:hover {
+    color: #e48800;
+}
+
+
+/* Mobile */
+@media (max-width:767px) {}
