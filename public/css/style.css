@@ -255,7 +255,15 @@ p {
         margin-bottom: 2rem;
     }
 
-
-
-
 }
+.countainercarousel{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+/* 
+slider bot */
+
