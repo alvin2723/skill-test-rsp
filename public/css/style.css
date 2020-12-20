@@ -2,16 +2,21 @@ html,
 body {
     margin: 0;
     height: 100vh;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: #fff;
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.875rem;
 }
+
+ul{
+    padding-inline-start:0px;
+}
+
 
 .orange-text {
     color: #e48800;
@@ -24,7 +29,6 @@ p {
     padding: 0.625rem 2.5rem;
     color: #fff;
     background-color: #e48800;
-
 }
 
 .btn-left:hover {
@@ -48,7 +52,6 @@ p {
     text-decoration: none;
     background-color: #e48800;
 }
-
 
 .btn-link {
     color: #fff;
@@ -76,7 +79,6 @@ p {
 }
 
 .overlay {
-
     background-color: transparent;
     opacity: 0.75;
     position: absolute;
@@ -84,28 +86,71 @@ p {
     top: 0;
     left: 0;
     height: 100%;
-
 }
 
 /* Navigation */
+
 .navbar-right {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
-    padding: 0 16px 0 16px;
+    padding: 0 1rem;
 }
 
-.navbar-right:hover {
-    color: #e48800;
+.nav-course {
+    background-image: linear-gradient(90deg, #2852a2 21.72%, #35b4ae 75.43%);
+    background-color: #35b4ae;
+    height: 7%;
 }
+
+/* List Course Navbar */
+.navbar-course-right {
+    padding-top: 1.125rem;
+    height: 3.875rem;
+    margin: 0;
+}
+
+.navbar-course-right:hover {
+    background-color: #333;
+    opacity: 0.5;
+}
+
+.navbar-course-right a {
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    font-weight: 200;
+    padding: 0 0.75rem;
+}
+
+.navbar-course-right a:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+.btn-sign-up{
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    margin-top:0.9375rem;
+    background-color:#E07C04; 
+    border:1px solid #E07C04; 
+    padding: 0.1875rem 1.125rem; 
+    border-radius: 20px;
+}
+
+.btn-sign-up:hover{
+    color: #fff;
+    background-color: #333;
+    opacity: 0.5;
+}
+
 
 /* Header Content */
 .head-container {
-
-    position: absolute;
-    top: 20%;
-    left: 22%;
-    width: 55%;
-    padding: 0 12% 0 4%;
+    padding: 13% 15% 0 10%;
     color: #fff;
 }
 
@@ -113,20 +158,19 @@ p {
     padding-left: 2rem;
 }
 
-
-
-.head-desc {
+.head-desc p {
     margin-top: 1.25rem;
+    padding-right: 2.5rem;
 }
 
 .head-button {
     margin-top: 1.25rem;
     margin-right: 15%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.875rem;
     font-weight: 500;
     text-align: center;
-    height: 40px;
+    height: 2.5rem;
 }
 
 /* Partner */
@@ -136,86 +180,185 @@ p {
     width: 100%;
     text-align: center;
     padding-top: 0.625rem;
-
 }
 
 .partner .partner-text {
+    font-family: "Montserrat", sans-serif;
     font-size: 1.125rem;
     line-height: 2.25rem;
+    font-weight: 400;
     padding-bottom: 1rem;
 }
 
 .partner .partner-widget {
-    padding: 2rem 0;
+    padding: 0.9375rem 0;
     width: 100%;
     background-color: rgba(0, 75, 102, 0.4);
+    text-align: center;
+}
+.carousel-icon {
+    width: 16.666%;
 }
 
-
-/* Mobile */
-@media (max-width:767px) {
-
+/* Laptop */
+@media (max-width: 1024px){
+    /* navigation */
+    .nav-content{
+        background-color: #3a3a3a;
+        opacity: 0.5;
+    }
+    
+    .navbar-brand{
+        position: absolute;
+        left:5px;
+        top:10%;
+        opacity: 1;
+    }
+    
+    .navbar-right {
+        
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0.625rem 0 0 0.3125rem;
+    }
+    
     /* Header Content */
+    .head-container {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        padding: 13% 5% 0 5%;
+        color: #fff;
+    }
+
+    .head-container h1{
+        font-size: 2.125rem;
+        font-weight: 600;
+        line-height: 2.5rem;
+    }
+
+    .head-desc p {
+        padding-right: 20%;
+    }
+
+    .head-button {
+        height: 1rem;
+        padding-right: 4rem;
+        
+    }
+
+    .btn-left {
+        width: 80%;
+        white-space: initial;
+        padding: 0.625rem 2rem;
+        line-height: 14px;
+    }
+    .btn-right {
+        width: 80%;
+        white-space: initial;
+        padding: 0.625rem 2rem;
+        line-height: 14px;
+    }
+    
+}
+/* Mobile */
+@media (max-width: 768px) {
+    
     h1 {
         font-size: 1.875rem;
         line-height: 2.375rem;
     }
 
     p {
-
         font-size: 0.9375rem;
         font-weight: 400;
         line-height: 1.75rem;
     }
 
-
-    .head-container {
-        text-align: center;
-        z-index: 100;
+    /* navigation */
+    .navbar-brand{
         position: absolute;
-        top: 15%;
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        padding: 0 12% 0 4%;
-        color: #fff;
-
+        right:5px;
+        top:10%;
+        max-width: 90px;
     }
+    
+    .navbar-right {
+        
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0.625rem 0 0 0.3125rem;
+    }
+    
 
+    /* Header Content */
+    .head-container {
+     
+       padding: 15% 5% 0 10%;
+    }
+    .head-container h1{
+     
+       padding-right: 20%;
+     }
+
+   
     .head-content {
         padding-left: 0;
     }
+    
 
     .head-button {
-        margin-top: 1.25rem;
-        margin-right: 0;
-        padding: 0.5rem 2.5rem;
-
+        
+      padding:0;
+      position: absolute;
+      left: 0;
+      
     }
 
     .btn-left {
         margin-bottom: 2rem;
     }
 
+    .btn-right {
+        width: 90%;
+        white-space: initial;
+        padding: 0.625rem 2.5rem;
+        line-height: 14px;
+    }
+
+
+
+    /* Footer */
+    .footer-content{
+        padding-left: 50%;
+        
+    }
+    .footer-right{
+        margin-top:1rem;
+    }
+
 }
 
-
+.body-container {
+    margin-top: 5rem;
+    position: relative;
+}
 
 /* first content */
-.body-container .first-content {
-    margin-top: 80px;
-    position: relative;
-    margin-bottom: 3.125rem;
-}
 
 .first-content .first-content-desc {
     padding: 0.625rem 2.5rem;
+    color: rgba(11, 22, 43, 0.6);
+    vertical-align:baseline;
+    display: block;
 }
 
-.body-container .first-content h2 {
+.first-content h2 {
     margin-bottom: 3.125rem;
 }
-
+.first-content h3{
+    width: 100%;
+}
 
 /* second content */
 .body-container .second-content {
@@ -232,15 +375,12 @@ p {
     background-size: cover;
     display: block;
     top: 0;
-
 }
-
 
 /* third content */
 .body-container .third-content {
     margin-top: 3.125rem;
     margin-bottom: 3.125rem;
-
 }
 
 .third-content .third-content-link {
@@ -253,102 +393,153 @@ p {
 
 /* seen on */
 .body-container .fourth-content {
-    background-color: #F4F5F6;
+    background-color: #f4f5f6;
     margin-top: 3.125rem;
     padding-top: 3.125rem;
+    padding-bottom:3.125rem;
+}
+.fourth-content h2{
+    font-size: 2.375rem;
+    line-height: 3.125rem;
+    font-weight: 700;
+    color: #0b162b;
+    margin-bottom:3.125rem;
 }
 
-.fourth-content .widget {
-
+.fourth-content .fourth-widget-content {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 80px 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
 }
 
+.fourth-widget-content .fourth-widget{
+    padding: 1rem;
+    width: 16.666%;
+    
+}
+.fourth-widget img{
+    filter:brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
+    margin:auto;
+    display: block;
+    height: auto;
+    text-align: center;
+    max-width: 100%;
+    box-shadow: none;
+    justify-content: center;
+}
+.fourth-widget img:hover{
+    filter: none;
+}
 
+/* Laptop */
+@media (max-width: 1024px){
+
+    /* First Content */
+    .first-content .first-content-desc {
+        padding: 0.625rem 0;
+    }
+
+    /* Second Content */
+    .second-content h2{
+        font-size: 1.625rem;
+
+    }
+}
 /* Mobile */
-@media (max-width:767px) {}
+@media (max-width: 768px) {
+}
 
 /* course header */
+.course-header-image {
+    min-height: 673px;
+    background-position: center;
+    background-repeat: no-repeat;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
 .course-container {
     width: 100%;
-    padding-top: 20%;
+    padding-top: 18%;
     padding-right: 20%;
-    padding-left: 15%;
+    padding-left: 20%;
     text-align: center;
     color: white;
-
 }
 
 .course-container .head-header .course-header-text {
     font-size: 2.5rem;
     font-weight: 400;
     line-height: 3.125rem;
-
-
 }
 
 .course-header-text .course-text-span {
     color: #e48800;
     font-weight: 800;
+}
 
+.course-head-desc {
+    margin: 1.25rem 0;
+    padding:0 4.375rem;
 }
 
 .course-container .course-button {
     width: 100%;
     margin-top: 1.25rem;
     margin-left: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.875rem;
     font-weight: 500;
     text-align: center;
     height: 40px;
-
 }
 
 /* course body  */
 .body-container .first-course {
-    margin-top: 80px;
+    margin-top: 5rem;
     position: relative;
     margin-bottom: 3.125rem;
-
-
 }
 
 /* first course content */
 .first-course-header {
     margin-top: 2rem;
     padding: 0 30% 10% 15%;
-
 }
 
 .first-course-header h4 {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 1.75rem;
     line-height: 2.5rem;
     font-weight: 400;
+    color:#0b162b;
 }
 
 .first-course-button {
     width: 35%;
     border-radius: 20px;
     margin-left: 15%;
-    padding: 0.625rem 2.5rem;
+    padding: 0.625rem 1rem;
     color: #fff;
     background-color: #e48800;
     text-align: center;
+
 }
 
 /* second course content */
 
 .body-container .second-course {
-
     position: relative;
     padding-bottom: 3.125rem;
-    background-color: #F4F5F6;
+    background-color: #f4f5f6;
 }
 
 .second-course .second-course-left {
@@ -356,21 +547,18 @@ p {
 }
 
 .second-course .second-course-left .second-left-header {
-    padding-top: 80px;
-
+    padding-top: 5rem;
 }
 
 .second-left-header h3 {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.875rem;
-
 }
 
 .second-course .second-course-left .second-left-desc {
     margin-top: 2rem;
     margin-bottom: 2rem;
-
 }
 
 .second-left-desc p {
@@ -388,7 +576,7 @@ p {
 /* Second Course Bottom */
 
 .second-course-bottom .second-bottom-header {
-    padding-top: 5%;
+    padding-top: 10%;
 }
 
 .second-bottom-header h4 {
@@ -397,11 +585,10 @@ p {
     line-height: 1.25rem;
     letter-spacing: 1.5px;
     text-decoration: none solid rgb(11, 22, 43);
-
 }
 
 .second-bottom-header h2 {
-    padding-top: 10px;
+    padding-top: 0.625rem;
     font-size: 2.125rem;
     font-weight: 700;
     line-height: 2.5rem;
@@ -410,8 +597,8 @@ p {
 }
 
 .second-bottom-desc p {
-    padding-top: 10px;
-    font-family: 'Raleway', sans-serif;
+    padding-top: 0.625rem;
+    font-family: "Raleway", sans-serif;
     font-size: 1.375rem;
     line-height: 1.875rem;
     letter-spacing: 1.5px;
@@ -422,20 +609,68 @@ p {
     font-weight: 700;
 }
 
+.second-left-button {
+    width: 35%;
+    border-radius: 20px;
+    padding: 0.625rem 1rem;
+    color: #fff;
+    background-color: #e48800;
+    text-align: center;
+}
 
+.second-course-right img{
+    width: 600px;
+    height: 650px;
+}
 
+/* Third Course */
+.third-card{
+    height: 100%;
+    padding: 3.125rem 30% 3.125rem 30%;
+}
 
+.third-card-title-1{
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    color: #111111;
+}
 
-/* fourth course */
+.third-card-title-2{
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.875rem;
+    color: #9999;
+}
+
+.third-card-title-3{
+    padding-top: 1.75rem;
+    padding-bottom: 1rem;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+    color: rgb(11, 22, 43, 0.8);
+}
+
+.third-card-text{
+    font-weight: 300;
+    font-size: 0.9375rem;
+    line-height: 1.875rem;
+    color: #0b162b;
+}
+
+/* Fourth Course */
 .fourth-course {
-    background-image: linear-gradient(90deg, #127BCA 0%, #35B4AE 100%);
+    background-image: linear-gradient(90deg, #127bca 0%, #35b4ae 100%);
     background-color: transparent;
-    padding: 3.125rem 20%;
+    padding: 3.125rem 0;
 }
 
 .fourth-course .fourth-course-left {
-    padding-left: 25%;
-    padding-top: 5px;
+    text-align: right;
+    padding-top: 0.3125rem;
 }
 
 .fourth-course-left h3 {
@@ -444,7 +679,6 @@ p {
     line-height: 1.875rem;
     font-weight: 400;
     text-decoration: none solid rgb(255, 255, 255);
-
 }
 
 .fourth-course .fourth-course-right {
@@ -462,15 +696,17 @@ p {
     text-align: center;
 }
 
+
+
 /* Fifth course */
 .fifth-course {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     text-align: center;
 }
 
 .fifth-course-top h4 {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 0.75rem;
     font-weight: 600;
     line-height: 2.5rem;
@@ -485,14 +721,14 @@ p {
 }
 
 .fifth-course .fifth-course-bottom {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
 }
 
 .fifth-course-button {
     width: 18%;
     border-radius: 20px;
-    margin-top: 15px;
+    margin-top: 0.9375rem;
     margin-left: auto;
     margin-right: auto;
     padding: 0.625rem 2.5rem;
@@ -502,19 +738,319 @@ p {
 }
 
 /* Mobile */
-@media (max-width:767px) {}
+@media (max-width: 1024px) {
+    /* Course Header */
+    .course-header-image {
+        min-height: 446px;
+      
+    }
+
+    .course-container {
+        width: 100%;
+        padding-top: 12%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* Course Header */
+    .course-container .head-header .course-header-text {
+        padding-right: 18%;
+        padding-left: 18%;
+        font-size: 2.125rem;
+        font-weight: 400;
+        line-height: 2.5rem;
+    }
+
+    .course-head-desc {
+        margin: 1.25rem 0;
+        padding:0;
+    }
+
+    
+    /* course body  */
+    .body-container .first-course {
+        margin-top: 5rem;
+        margin-bottom: 3.125rem;
+    }
+
+    /* first course content */
+    .first-course-header {
+        margin-top: 1rem;
+        padding: 0 0 10% 15%;
+    }
+
+    .first-course-header h4 {
+
+        font-size: 1.25rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        
+    }
+    .first-course-header h4 span{
+        font-weight: 600;
+    }
+
+    .first-course-button {
+        width: 35%;
+        padding: 0.3125rem 0.5rem;
+    }
+
+    .first-course-image{
+        width: 470px;
+        height: 300px;
+    }
+
+    /* Second Course Top */
+    .second-course .second-course-left {
+        padding-left: 0.625rem;
+    }
+    
+    .second-course .second-course-left .second-left-desc {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .second-course-right img{
+        width: 423.578px;
+        height: 462.250px;
+    }
+
+    /* Third Course */
+    .third-card{
+        height: 100%;
+        padding: 3.125rem 6% 3.125rem 6%;
+    }
+
+    /* Fourth Course */
+    
+    .fourth-course .fourth-course-right {
+        width: 44.816%;
+        padding-right: 0;
+    }
+    
+    .fourth-course-button {
+        width: 80%;
+        border-radius: 20px;
+        margin-left: 0;
+        padding: 0.625rem 0.5rem;
+    }
+
+    /* Fifth Course */
+    .fifth-course-img{
+        width: 792px;
+        height: 153.828;
+    }
+
+    .fifth-course-button {
+        width: 18%;
+        border-radius: 20px;
+        margin-top: 0.9375rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.625rem 0.5rem;
+        color: #fff;
+        background-color: #e48800;
+        text-align: center;
+    }
+
+}
 
 
+/* Mobile */
+@media (max-width: 768px) {
+    /* First Course */
+    .first-course-image{
+        padding-left: -50px;
+        width: 409.500px;
+        height: 234.750px;
+    }
+
+    /* Second Course*/
+    .second-course-right img{
+        width: 308.938;
+        height: 337.141;
+    }
+
+    .second-left-button {
+        width: 50%;
+        border-radius: 20px;
+        padding: 0.6rem 0.5rem;
+        color: #fff;
+        background-color: #e48800;
+        text-align: center;
+    }
+
+    /* Fourth Course */
+    .fourth-course .fourth-course-left {
+        padding-left:0;
+        padding-right: 8%;
+    }
+
+    .fourth-course .fourth-course-right {
+        padding-left: 20%;
+    }
+
+    .fourth-course-button {
+        width: 100%;
+        border-radius: 20px;
+        margin-left: 0;
+        padding: 0.625rem 0.5rem;
+    }
+
+     /* Fifth Course */
+     .fifth-course-img{
+        width: 536px;
+        height: 104.109;
+    }
+    .fifth-course-button {
+        width: 30%;
+        border-radius: 20px;
+        margin-top: 0.9375rem;
+        
+        padding: 0.5rem 2rem;
+        color: #fff;
+        background-color: #e48800;
+        text-align: center;
+    }
+    
+}
 
 /* List Course */
+
+
+.filter-course {
+    width: 100%;
+    padding: 3.125rem 0;
+}
+
+.input-group:last-child {
+    border-radius: none;
+}
+
 .list-course {
-    position: relative;
-    top: 10%;
+    margin-bottom: 3.125rem;
+}
+
+.card-course-title .card-title-link{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    color: #3b8c98;
+    text-decoration: none;
+}
+
+.card-course-title .card-text{
+    margin:0.625rem 0 3.125rem 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #72bcca;
+}
+
+.card-course-name{
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    font-size: 0.9375rem;
+    line-height: 1.875rem;
+    color: #212338;
 }
 
 /* Mobile */
-@media (max-width:767px) {}
+@media (max-width: 768px) {
+}
 
+/* Detail Course */
+.detail-header-image {
+    min-height: 673px;
+    background-position: center;
+    background-repeat: no-repeat;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+    opacity: 0.9;
+    background-color: #EFEFF5;
+}
+
+.detail-container {
+    position: relative;
+    padding-top: 20%;
+    text-align: center;
+    color: #fff;
+}
+
+.detail-container h1{
+    font-weight: 700;
+    line-height: 4.375rem;
+}
+
+.detail-container p{
+    padding: 1rem 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detail-container p span{
+    font-weight: 700;
+}
+
+
+.detail-button {
+    width: 20%;
+    height: 10%;
+    border-radius: 25px;
+    margin-top: 0.9375rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 2.5rem;
+    color: #fff;
+    background-color: rgb(224 124 4);
+    text-align: center;
+}
+
+.start-button {
+    color: #fff;
+    background-color: #e48800;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    /* Detail Container */
+    .detail-header-image{
+        height: 801.594px;
+    }
+
+    .detail-container {
+        
+        padding-top: 50%;
+        text-align: center;
+        color: #fff;
+    }
+    .detail-container h1{
+
+    }
+    
+    .detail-button {
+        width: 20%;
+        height: 10%;
+        border-radius: 25px;
+        margin-top: 3.125rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1rem 1rem;
+        color: #fff;
+        background-color: rgb(224 124 4);
+        text-align: center;
+    }
+}
 
 .countainercarousel {
     height: 100vh;
@@ -522,19 +1058,37 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 0.9375rem;
 }
 
 /* Mobile */
-@media (max-width:767px) {}
+@media (max-width: 768px) {
+}
 
 .footer-content {
     background-color: #0c162a;
     color: #fff;
-    padding: 80px 0;
+    padding: 3.125rem 0;
+    text-align: left;
+}
+.footer2-content{
+    position: relative;
+    bottom:0;
+    background-color: #3B8C9B;
+    color: #fff;
+    padding: 20px 0;
+    text-align: left;
 }
 
-.footer-content ul li {
+.footer-header {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    color: #eaeaea;
+}
+
+.footer-left li {
+   
     list-style-type: none;
 }
 
@@ -548,10 +1102,68 @@ p {
 }
 
 
+
+.footer-right li{
+    list-style-type: none;
+    padding-left: 0;
+    padding-bottom: 2.75rem;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin: 0;
+}
+
+
+.footer-logo .logo {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-size: 0.9375rem;
+    background: #35b4ae;
+    border-color: #35b4ae;
+    padding-top: 0.5rem;
+    border-radius: 50%;
+    margin-right: 0.625rem;
+    text-align: center;
+}
+
+.logo svg {
+    fill: #fff;
+}
+
+.footer-space {
+    padding-right: 0.675rem;
+}
+
+/* Laptop */
+
+@media (max-width: 1024px) {
+
+    /* footer */
+    .footer-header {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        font-weight: 600;
+        color: #eaeaea;
+        padding-left: -15px;
+    }
+   
+
+    .footer-left ul {
+        text-align: left;
+       
+       
+        list-style-type: none;
+    }
+   
+}
+
 /* Mobile */
-@media (max-width:767px) {}
-
-
+@media (max-width: 768px) {
+}
 
 /* 
 slider bot */

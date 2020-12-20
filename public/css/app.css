@@ -6535,9 +6535,9 @@ h1,
 
 h2,
 .h2 {
-    font-size: 2.125rem;
+    font-size: 2.375rem;
     font-weight: 700;
-    line-height: 3.125rem;
+    line-height: 40px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -8312,17 +8312,17 @@ pre code {
 }
 
 .form-control::-moz-placeholder {
-    color: #6c757d;
+    color: #555555;
     opacity: 1;
 }
 
 .form-control:-ms-input-placeholder {
-    color: #6c757d;
+    color: #555555;
     opacity: 1;
 }
 
 .form-control::placeholder {
-    color: #6c757d;
+    color: #555555;
     opacity: 1;
 }
 
@@ -9187,14 +9187,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-secondary {
-    color: #6c757d;
-    border-color: #6c757d;
+    color: #333;
+    border-color: #ccc;
 }
 
 .btn-outline-secondary:hover {
-    color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d;
+    color: #333;
+    background-color: #ccc;
+    border-color: #ccc;
 }
 
 .btn-outline-secondary:focus,
@@ -14425,6 +14425,14 @@ button.bg-dark:focus {
     z-index: 1030;
 }
 
+.absolute-top{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
 .fixed-bottom {
     position: fixed;
     right: 0;
@@ -17070,9 +17078,6 @@ a.text-dark:focus {
     }
 }
 
-important;
-}
-
 .pt-xl-0,
 .py-xl-0 {
     padding-top: 0 !important;
@@ -17355,7 +17360,6 @@ important;
 .ml-xl-auto,
 .mx-xl-auto {
     margin-left: auto !important;
-}
 }
 
 .stretched-link::after {

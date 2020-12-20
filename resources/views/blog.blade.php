@@ -5,7 +5,7 @@
 <div class="wrap">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark absolute-top bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="{{asset('image/refactorylogo.png')}}" alt="" width="125" height="52">
@@ -245,4 +245,20 @@
         </div>
     </div>
 </main>
+
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script>
+    const config = {
+        type: "carousel",
+        perView: 3
+    };
+    new Glide('.glide', config).mount()
+</script>
+<script>
+    const config2 = {
+        type: "carousel",
+        perView: 1
+    };
+    new Glide('.glide2', config2).mount()
+</script>
 @endsection

@@ -1,12 +1,43 @@
 @extends('layout.app')
 
 @section('content')
-    
+    <title>Courses - Refactory</title>
     <header>
         
         {{-- Background Header Image --}}
-        <div class="header-image" style="background-image:url('{{asset('image/courses.jpg')}}');">
+        <div class="course-header-image" style="background-image:url('{{asset('image/courses.jpg')}}');">
             <div class="overlay" style="background-image: linear-gradient(120deg, #00256C 9.05%, #04ACA4 84.05%)"></div>
+
+            <nav class="navbar navbar-expand-lg navbar-dark absolute-top nav-content">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="{{asset('image/refactorylogo.png')}}" alt="" width="125" height="52">
+                        </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item navbar-right">
+                                <a class="nav-link" href="/home">Home</a>
+                            </li>
+                            <li class="nav-item active navbar-right">
+                                <a class="nav-link" href="/courses">Courses</a>
+                            </li>
+                            <li class="nav-item navbar-right">
+                                <a class="nav-link" href="#">Custom Trainings</a>
+                            </li>
+                            <li class="nav-item navbar-right">
+                                <a class="nav-link" href="#">Case Studies</a>
+                            </li>
+                            <li class="nav-item navbar-right">
+                                <a class="nav-link" href="/blog">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
              {{-- Header Content --}}
             <div class="container">
                 <div class="course-container">
@@ -15,10 +46,10 @@
                             <div class="row head-content">
                                 <div class="col-md-12 head-header">
                                     <h1 class="course-header-text">
-                                        Tingkatkan <span class="course-text-span">skill pemograman</span> kapanpun, dimanapun
+                                        Tingkatkan <span class="course-text-span">skill pemograman</span> kapan pun, dimana pun.
                                     </h1>
                                 </div>
-                                <div class="col-md-12 head-desc">
+                                <div class="col-md-12 course-head-desc">
                                     <p>
                                         We’re a brand of passionate software engineers and educators with an engaging curriculum backed by real-world software projects ready to boost your career.
                                     </p>
@@ -26,7 +57,7 @@
                             </div>
                             <div class="row course-button">
                                 <div class="col-md-6 col-sm-12">
-                                    <a href="" type="button" class="btn-left">
+                                    <a href="/list-courses" type="button" class="btn-left">
                                         <span>
                                             Masuk & Mulai Belajar
                                         </span>
@@ -45,37 +76,6 @@
                 </div>
             </div>
         </div>
-
-        {{-- Navigation --}}
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="{{asset('image/refactorylogo.png')}}" alt="" width="125" height="52">
-                    </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item navbar-right">
-                            <a class="nav-link" href="/home">Home</a>
-                        </li>
-                        <li class="nav-item active navbar-right">
-                            <a class="nav-link" href="/courses">Courses</a>
-                        </li>
-                        <li class="nav-item navbar-right">
-                            <a class="nav-link " href="#">Custom Trainings</a>
-                        </li>
-                        <li class="nav-item navbar-right">
-                            <a class="nav-link " href="#">Case Studies</a>
-                        </li>
-                        <li class="nav-item navbar-right">
-                            <a class="nav-link " href="/blog">Blog</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
         
     </header>
 
@@ -130,14 +130,19 @@
                                 Masyarakat secara luas juga dapat memanfaatkan pembelajaran untuk meningkatkan keahlian sehingga mampu berkarya dan mendapat keuntungan karir tanpa khawatir mahalnya belajar.
                             </p>
                         </div>
+                        <div class="second-left-button">
+                            <a href="" type="button" class="btn-link">
+                                <span>
+                                    Daftar Sekarang
+                                </span>
+                            </a>
+                        </div>
                     </div>
-
                     <div class="col-md-6">
                         <div class="second-course-right">
-                                <img src="{{asset('image/couse-cont.jpg')}}" alt=""  width="600" style="object-fit: cover;">
-
+                            <img src="{{asset('image/couse-cont.jpg')}}" alt="" style="object-fit: cover;">
                         </div>
-                        </div>
+                    </div>
                 </div>
 
                     {{-- Second Course Bottom --}}
@@ -155,7 +160,64 @@
 
             {{-- Third Course --}}
         <div class="third-course">
-
+            <div class="row d-flex justify-content-center third-card">
+                <div class="col-lg-6 col-md-6 col-sm-12third-card-left">
+                    <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 100%;">
+                        <img class="card-img-top" src="{{$course_data[0]['user']['photo_url']}}" alt="Card image cap">
+                        <div class="card-body">
+                            <h2 class="third-card-title-1">{{$course_data[0]['user']['name']}}</h2>
+                            <h5 class="third-card-title-2">{{$course_data[0]['user']['from']}}</h5>
+                            <span class="">
+                                @if($course_data[0]['star'] == 4)
+                                    <i class="fas fa-star fa-lg" style="color:#E48800"></i>
+                                    <i class="fas fa-star fa-lg" style="color:#E48800"></i>
+                                    <i class="fas fa-star fa-lg" style="color:#E48800"></i>
+                                    <i class="fas fa-star fa-lg" style="color:#E48800"></i>
+                                @else
+                                    <i class="fas fa-star fa-lg" style="color:#E48800"></i>
+                                    <i class="fas fa-star fa-lg" style="color:#E48800"></i>
+                                    <i class="fas fa-star fa-lg" style="color:#E48800"></i>
+                                    <i class="fas fa-star fa-lg" style="color:#E48800"></i>
+                                    <i class="fas fa-star fa-lg" style="color:#E48800"></i>
+                                @endif
+                            </span>
+                            <h3 class="third-card-title-3">
+                                {{$course_data[0]['title']}}
+                            </h3>
+                            <p class="third-card-text">{{$course_data[0]['description']}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 third-card-right">
+                    <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 100%;">
+                        <img class="card-img-top" src="{{$course_data[1]['user']['photo_url']}}" alt="Card image cap">
+                        <div class="card-body">
+                            <h2 class="third-card-title-1">{{$course_data[1]['user']['name']}}</h2>
+                            <h5 class="third-card-title-2">{{$course_data[1]['user']['from']}}</h5>
+                            <span class="">
+                                @if($course_data[1]['star'] == 4)
+                                    <i class="fas fa-star fa-lg" style="color:#E48800"></i>
+                                    <i class="fas fa-star fa-lg" style="color:#E48800"></i>
+                                    <i class="fas fa-star fa-lg" style="color:#E48800"></i>
+                                    <i class="fas fa-star fa-lg" style="color:#E48800"></i>
+                                @else
+                                    <i class="fas fa-star fa-lg" style="color:#E48800"></i>
+                                    <i class="fas fa-star fa-lg" style="color:#E48800"></i>
+                                    <i class="fas fa-star fa-lg" style="color:#E48800"></i>
+                                    <i class="fas fa-star fa-lg" style="color:#E48800"></i>
+                                    <i class="fas fa-star fa-lg" style="color:#E48800"></i>
+                                @endif
+                            </span>
+                            <h3 class="third-card-title-3">
+                                {{$course_data[1]['title']}}
+                            </h3>
+                            <p class="third-card-text">{{$course_data[1]['description']}}</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
         </div>
 
             {{-- Fourth Course --}}
@@ -165,11 +227,11 @@
                     <div class="col-md-6 col-sm-12 fourth-course-left">
                         <h3>Ready to Start Learning</h3>
                     </div>
-                    <div class="col-md-6 col-sm-12  fourth-course-right">
+                    <div class="col-md-5 col-sm-12  fourth-course-right">
                         <div class="fourth-course-button">
                             <a href="" type="button" class="btn-link">
                                 <span>
-                                    Pelajari Lebih
+                                    Daftar Sekarang
                                 </span>
                             </a>
                         </div>
@@ -185,7 +247,7 @@
                 <h3>Memulai Belajar di <br> Refactory Course</h3>
             </div>
             <div class="fifth-course-bottom">
-                <img src="{{asset('image/langkah.png')}}" alt="">
+                <img src="{{asset('image/langkah.png')}}" alt="" class="fifth-course-img">
                 <div class="fifth-course-button">
                     <a href="" type="button" class="btn-link">
                         <span>
