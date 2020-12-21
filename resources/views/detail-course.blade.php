@@ -58,26 +58,26 @@
         
     </header>
 
-    {{-- Body Content --}}
+    {{-- Detail Content --}}
     <main class="body-container text-center">
     
-        {{-- First Content --}}
-        <div class="container first-content">
-            <h3>Tentang Course</h3>
-            <p class="first-content-desc">
+        {{-- First Detail --}}
+        <div class="container first-detail">
+            <h3 class="detail-body-header">Tentang Course</h3>
+            <p class="first-detail-desc">
                {{$detail_data['short-description']}}
             </p>
                
         </div>
 
         
-            {{-- Second Content --}}
-        <div class="second-content">
+            {{-- Second Detail --}}
+        <div class="second-detail">
             <div class="container">
-                <h3 class="mb-5">Materi Course</h3>
+                <h3 class="detail-body-header">Materi Course</h3>
                 <div class="materi-course">
                     
-                    <table class="table border w-50 m-auto">
+                    <table class="table border mx-auto pb-5">
                         <thead style="background-color:#E8E8E8">
                             <tr>
                                 <th scope="col" class="text-left" style="border-bottom: 1px solid #fff">{{ $detail_materi['section']}}</th>
@@ -91,10 +91,318 @@
                                     <span class="course-logo pr-2">
                                        <img src="{{asset('image/youtube.svg')}}" alt="" class="pb-1">
                                     </span>
-                                    {{ $detail_materi_data[0]['title']}} ( {{ $detail_materi_data[0]['time-in']}} )
+                                    {{ $detail_materi_data[0]['title']}} ({{ $detail_materi_data[0]['time-in']}})
                                 </td>
                                 <td class="text-right">
                                     <a href=" {{ $detail_materi_data[0]['url']}}" type="button" class="btn btn-sm start-button mb-1">
+                                        START
+                                    </a>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" style="border-top: 1px solid #fff">
+                                    <span class="course-logo pr-2">
+                                       <img src="{{asset('image/youtube.svg')}}" alt="" class="pb-1">
+                                    </span>
+                                    Atribut dan Tag HTML
+                                    (16:26)
+                                </td>
+                                <td class="text-right">
+                                    <a href="" type="button" class="btn btn-sm start-button mb-1">
+                                        START
+                                    </a>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" style="border-top: 1px solid #fff">
+                                    <span class="course-logo pr-2">
+                                       <img src="{{asset('image/youtube.svg')}}" alt="" class="pb-1">
+                                    </span>
+                                    Hello World
+                                    (6:46)
+                                </td>
+                                <td class="text-right">
+                                    <a href="" type="button" class="btn btn-sm start-button mb-1">
+                                        START
+                                    </a>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" style="border-top: 1px solid #fff">
+                                    <span class="course-logo pr-2">
+                                       <img src="{{asset('image/youtube.svg')}}" alt="" class="pb-1">
+                                    </span>
+                                    Heading
+                                    (8:52)
+                                </td>
+                                <td class="text-right">
+                                    <a href="" type="button" class="btn btn-sm start-button mb-1">
+                                        START
+                                    </a>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" style="border-top: 1px solid #fff">
+                                    <span class="course-logo pr-2">
+                                       <img src="{{asset('image/youtube.svg')}}" alt="" class="pb-1">
+                                    </span>
+                                    Paragraf
+                                    (7:37)
+                                </td>
+                                <td class="text-right">
+                                    <a href="" type="button" class="btn btn-sm start-button mb-1">
+                                        START
+                                    </a>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" style="border-top: 1px solid #fff">
+                                    <span class="course-logo pr-2">
+                                       <img src="{{asset('image/youtube.svg')}}" alt="" class="pb-1">
+                                    </span>
+                                    Spasi dalam HTML
+                                    (11:27)
+                                </td>
+                                <td class="text-right">
+                                    <a href="" type="button" class="btn btn-sm start-button mb-1">
+                                        START
+                                    </a>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" style="border-top: 1px solid #fff">
+                                    <span class="course-logo pr-2">
+                                       <img src="{{asset('image/youtube.svg')}}" alt="" class="pb-1">
+                                    </span>
+                                    Sematic Tag
+                                    (11:27)
+                                </td>
+                                <td class="text-right">
+                                    <a href="" type="button" class="btn btn-sm start-button mb-1">
+                                        START
+                                    </a>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" style="border-top: 1px solid #fff">
+                                    <span class="course-logo pr-2">
+                                       <img src="{{asset('image/youtube.svg')}}" alt="" class="pb-1">
+                                    </span>
+                                    List
+                                    (6:30)
+                                </td>
+                                <td class="text-right">
+                                    <a href="" type="button" class="btn btn-sm start-button mb-1">
+                                        START
+                                    </a>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" style="border-top: 1px solid #fff">
+                                    <span class="course-logo pr-2">
+                                       <img src="{{asset('image/youtube.svg')}}" alt="" class="pb-1">
+                                    </span>
+                                    Tautan
+                                    (16:35)
+                                </td>
+                                <td class="text-right">
+                                    <a href="" type="button" class="btn btn-sm start-button mb-1">
+                                        START
+                                    </a>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" style="border-top: 1px solid #fff">
+                                    <span class="course-logo pr-2">
+                                       <img src="{{asset('image/youtube.svg')}}" alt="" class="pb-1">
+                                    </span>
+                                    Menampilkan Gambar
+                                    (13:56)
+                                </td>
+                                <td class="text-right">
+                                    <a href="" type="button" class="btn btn-sm start-button mb-1">
+                                        START
+                                    </a>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" style="border-top: 1px solid #fff">
+                                    <span class="course-logo pr-2">
+                                       <img src="{{asset('image/youtube.svg')}}" alt="" class="pb-1">
+                                    </span>
+                                    Tabel
+                                    (17:25)
+                                </td>
+                                <td class="text-right">
+                                    <a href="" type="button" class="btn btn-sm start-button mb-1">
+                                        START
+                                    </a>
+                                    
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+
+                    <table class="table border mx-auto pb-5">
+                        <thead style="background-color:#E8E8E8">
+                            <tr>
+                                <th scope="col" class="text-left" style="border-bottom: 1px solid #fff">HTML Forms</th>
+                                <th scope="col" style="border-bottom: 1px solid #fff"></th>
+                            </tr>
+    
+                        </thead>
+                        <tbody class="bg-secondary border-bottom-0">
+                            <tr>
+                                <td class="text-left" style="border-top: 1px solid #fff">
+                                    <span class="course-logo pr-2">
+                                       <img src="{{asset('image/youtube.svg')}}" alt="" class="pb-1">
+                                    </span>
+                                   Pengenalan Form (12:48)
+                                </td>
+                                <td class="text-right">
+                                    <a href="" type="button" class="btn btn-sm start-button mb-1">
+                                        START
+                                    </a>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" style="border-top: 1px solid #fff">
+                                    <span class="course-logo pr-2">
+                                       <img src="{{asset('image/youtube.svg')}}" alt="" class="pb-1">
+                                    </span>
+                                    Membuat Form Pertama 1
+                                    (16:09)
+                                </td>
+                                <td class="text-right">
+                                    <a href="" type="button" class="btn btn-sm start-button mb-1">
+                                        START
+                                    </a>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" style="border-top: 1px solid #fff">
+                                    <span class="course-logo pr-2">
+                                       <img src="{{asset('image/youtube.svg')}}" alt="" class="pb-1">
+                                    </span>
+                                    Membuat Form Pertama 2
+                                    (7:30)
+                                </td>
+                                <td class="text-right">
+                                    <a href="" type="button" class="btn btn-sm start-button mb-1">
+                                        START
+                                    </a>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" style="border-top: 1px solid #fff">
+                                    <span class="course-logo pr-2">
+                                       <img src="{{asset('image/youtube.svg')}}" alt="" class="pb-1">
+                                    </span>
+                                    Pengelompokan Form
+                                    (9:19)
+                                </td>
+                                <td class="text-right">
+                                    <a href="" type="button" class="btn btn-sm start-button mb-1">
+                                        START
+                                    </a>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" style="border-top: 1px solid #fff">
+                                    <span class="course-logo pr-2">
+                                       <img src="{{asset('image/youtube.svg')}}" alt="" class="pb-1">
+                                    </span>
+                                    Validasi Form
+                                    (9:48)
+                                </td>
+                                <td class="text-right">
+                                    <a href="" type="button" class="btn btn-sm start-button mb-1">
+                                        START
+                                    </a>
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="table border mx-auto pb-5">
+                        <thead style="background-color:#E8E8E8">
+                            <tr>
+                                <th scope="col" class="text-left" style="border-bottom: 1px solid #fff">HTML Ekstra Tag</th>
+                                <th scope="col" style="border-bottom: 1px solid #fff"></th>
+                            </tr>
+    
+                        </thead>
+                        <tbody class="bg-secondary border-bottom-0">
+                            <tr>
+                                <td class="text-left" style="border-top: 1px solid #fff">
+                                    <span class="course-logo pr-2">
+                                       <img src="{{asset('image/youtube.svg')}}" alt="" class="pb-1">
+                                    </span>
+                                   Komentar dalam HTML (6:32)
+                                </td>
+                                <td class="text-right">
+                                    <a href="" type="button" class="btn btn-sm start-button mb-1">
+                                        START
+                                    </a>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" style="border-top: 1px solid #fff">
+                                    <span class="course-logo pr-2">
+                                       <img src="{{asset('image/youtube.svg')}}" alt="" class="pb-1">
+                                    </span>
+                                    Atribut Id dan Class
+                                    (6:52)
+                                </td>
+                                <td class="text-right">
+                                    <a href="" type="button" class="btn btn-sm start-button mb-1">
+                                        START
+                                    </a>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" style="border-top: 1px solid #fff">
+                                    <span class="course-logo pr-2">
+                                       <img src="{{asset('image/youtube.svg')}}" alt="" class="pb-1">
+                                    </span>
+                                    Grup Elemen
+                                    (10:59)
+                                </td>
+                                <td class="text-right">
+                                    <a href="" type="button" class="btn btn-sm start-button mb-1">
+                                        START
+                                    </a>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" style="border-top: 1px solid #fff">
+                                    <span class="course-logo pr-2">
+                                       <img src="{{asset('image/youtube.svg')}}" alt="" class="pb-1">
+                                    </span>
+                                    Menyematkan Maps di HTML
+                                    (6:32)
+                                </td>
+                                <td class="text-right">
+                                    <a href="" type="button" class="btn btn-sm start-button mb-1">
                                         START
                                     </a>
                                     
@@ -107,17 +415,17 @@
             </div>
         </div>
 
-            {{-- Third Content --}}
-        <div class="container third-content">
-            <div class="row">
-                <div class="col-md-6 pb-5">
-                    <img src="{{$detail_data['quistion-photo']}}" alt="">
+            {{-- Third Detail --}}
+        <div class="container">
+            <div class="third-detail">
+                <div class="third-detail-left">
+                    <img src="{{$detail_data['quistion-photo']}}" alt="" class="third-detail-img">
                 </div>
-                <div class="col-md-6 pt-5 text-left">
-                    <h2>
+                <div class="third-detail-right">
+                    <h2 class="third-detail-header">
                         {{$detail_data['quistion']}}
                     </h2>
-                    <p>{{$detail_data['answer']}}</p>
+                    <p class="third-detail-right-desc">{{$detail_data['answer']}}</p>
                 </div>
             </div>
         </div>

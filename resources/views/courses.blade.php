@@ -111,7 +111,7 @@
                     {{-- Second Course Top --}}
                 <div class="row second-course-top">
 
-                    <div class="col-md-6 second-course-left">
+                    <div class="col-md-6 col-sm-12  second-course-left">
                         <div class="second-left-header">
                             <h3>
                                 Kursus pemrograman untuk semua orang tanpa terkecuali
@@ -138,7 +138,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-12">
                         <div class="second-course-right">
                             <img src="{{asset('image/couse-cont.jpg')}}" alt="" style="object-fit: cover;">
                         </div>
@@ -161,7 +161,7 @@
             {{-- Third Course --}}
         <div class="third-course">
             <div class="row d-flex justify-content-center third-card">
-                <div class="col-lg-6 col-md-6 col-sm-12third-card-left">
+                <div class="col-lg-6 col-md-6 col-sm-12 third-card-left">
                     <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 100%;">
                         <img class="card-img-top" src="{{$course_data[0]['user']['photo_url']}}" alt="Card image cap">
                         <div class="card-body">
@@ -224,10 +224,10 @@
         <div class="fourth-course">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-sm-12 fourth-course-left">
+                    <div class="col-lg-6 col-sm-12 fourth-course-left">
                         <h3>Ready to Start Learning</h3>
                     </div>
-                    <div class="col-md-5 col-sm-12  fourth-course-right">
+                    <div class="col-lg-5 col-sm-12  fourth-course-right">
                         <div class="fourth-course-button">
                             <a href="" type="button" class="btn-link">
                                 <span>

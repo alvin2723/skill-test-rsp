@@ -147,10 +147,10 @@
     <main class="body-container text-center">
     
         {{-- First Content --}}
-        <div class="container first-content">
+        <div class="container">
                 <h2>Apa Yang Refactory dapat Bantu?</h2>
-                <div class="d-flex justify-content-center">
-                    <div class="col-md-6 col-sm-12">
+                <div class="first-content pt-5">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="row">
                             <div class="col-md-12">
                                 <img src="{{asset('image/material_approval.png')}}" alt=""class="pb-3">
@@ -163,7 +163,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="row">
                             <div class="col-md-12">
                                 <img src="{{asset('image/material_bolt.png')}}" alt="" class="pb-3">
@@ -194,69 +194,68 @@
         <div class="fourth-content">
             <div class="container">
                 <h2>AS SEEN ON</h2>
-                <div class="fourth-widget-content">
+                <div class="row fourth-widget-content">
                    
-                    <div class="fourth-widget">
+                    <div class="col-lg-2 col-sm-6 col-xs-6 fourth-widget">
                         <a href="https://www.cnnindonesia.com/teknologi/20171007074240-192-246767/menakar-peluang-karier-ahli-bahasa-pemrograman-di-indonesia/">
                             <img src="{{$seen_data[1]['photo_url']}}" alt=""style="object-fit:contain; padding-top:1rem;">
                         </a>
                         
                     </div>
-                    <div class="fourth-widget">
+                    <div class="col-lg-2 col-sm-6 col-xs-6 fourth-widget">
                         <a href="https://www.medcom.id/teknologi/news-teknologi/ob3Bgq8N-startup-refactory-ingin-naikkan-level-programmer-indonesia">
                             <img src="{{asset('image/medcom.png')}}" alt=""  style="object-fit:contain">
                         </a>
                     </div>
-                    <div class="fourth-widget">
+                    <div class="col-lg-2 col-sm-6 col-xs-6 fourth-widget">
                         <a href="https://www.beritasatu.com/archive/451323/coder-dan-programmer-komputer-paling-dicari-di-dunia-kerja-modern">
                             <img src="{{asset('image/beritasatu.png')}}" alt="" style="object-fit:contain;padding-top:1.2rem;">
                         </a>
                     </div>
-                    <div class="fourth-widget">
+                    <div class="col-lg-2 col-sm-6 col-xs-6 fourth-widget">
                         <a href="https://kumparan.com/aditya-panji/melihat-peluang-di-tengah-kebutuhan-profesi-programmer-di-indonesia">
                             <img src="{{asset('image/kumparan.png')}}" alt=""  style="object-fit:contain;padding-top:0.6125rem;">
                         </a>
                     </div>
-                    <div class="fourth-widget">
+                    <div class="col-lg-2 col-sm-6 col-xs-6 fourth-widget">
                         <a href="https://tech.idntimes.com/trend/indra/bukti-belajar-coding-itu-keren-refactory-resmi-wisuda-13-lulusan-siap-saing">
                             <img src="{{$seen_data[0]['photo_url']}}" alt="" style="object-fit:contain;padding-top:1rem;">
                         </a>
                     </div>
-                    <div class="fourth-widget">
+                    <div class="col-lg-2 col-sm-6 col-xs-6 fourth-widget">
                         <a href="http://m.viva.co.id/digital/955039-pasar-coding-di-indonesia-masih-terbuka-lebar">
                             <img src="{{asset('image/viva.png')}}" alt="" style="object-fit:contain;padding-top:0.6rem;">
                         </a>
                     </div>
-                      
-                </div>
-                <div class="fourth-widget-content">
-                    <div class="fourth-widget">
+                    <div class="col-lg-2 col-sm-none col-xs-6 fourth-widget-clear">
                        
                     </div>
-                    <div class="fourth-widget">
+                    <div class="col-lg-2 col-sm-6 col-xs-6 fourth-widget">
                         <a href="https://mediaindonesia.com/humaniora/122152/5-peluang-pekerjaan-untuk-para-coder">
                             <img src="{{$seen_data[2]['photo_url']}}" alt="" >
                         </a>
                     </div>
-                    <div class="fourth-widget">
+                    <div class="col-lg-2 col-sm-6 col-xs-6 fourth-widget">
                         <a href="https://m.tribunnews.com/techno/2017/09/25/programmer-semakin-menjanjikan-refactory-pilih-yogyakarta-jadi-markas-kedua">
                             <img src="{{asset('image/tribun.png')}}" alt="" style="object-fit:contain;padding-top:1.5rem;">
                         </a>
                     </div>
-                    <div class="fourth-widget">
+                    <div class="col-lg-2 col-sm-6 col-xs-6 fourth-widget">
                         <a href="https://www.jawapos.com/oto-dan-tekno/teknologi/26/09/2017/bawa-misi-ini-bos-refactory-id-pilih-jogja-jadi-markas-kedua/">
                             <img src="{{asset('image/jawapos.png')}}" alt="" >
                         </a>
                     </div>
-                    <div class="fourth-widget">
+                    <div class="col-lg-2 col-sm-6 col-xs-6 fourth-widget">
                         <a href="https://inilah.com/ototekno/2403411/peran-coder-dan-programer-indonesia-di-masa-depan">
                             <img src="{{asset('image/inilahcom.png')}}" alt="" style="object-fit:contain;padding-top:1.5rem;">
                         </a>
                     </div>
-                    <div class="fourth-widget">
+                    <div class="col-lg-2 col-sm-6 col-xs-6 fourth-widget-clear">
                         
                     </div>
+                      
                 </div>
+               
             </div>
         </div>
     </main>

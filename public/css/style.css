@@ -339,12 +339,65 @@ ul{
 
 }
 
+@media (max-width: 544px) {
+
+    /* Navbar */
+    .navbar-brand img{
+        max-width: 90px;
+        height: auto;
+    }
+
+    /* Head Container */
+    .header-image {
+        min-height: 841px;
+    }
+    
+    .head-container {
+        margin:0;
+        padding: 40% 5% 0 5%;
+        text-align: center;
+       
+    }
+
+    .head-container h1{
+       padding-right: 0;
+       display: block;
+       width: 100%;
+    }
+    
+    .head-content {
+        padding-left: 0;
+    }
+    
+    .head-desc p {
+        margin-top: 1.25rem;
+        padding-right: 0;
+    }
+    
+    .head-button {
+        margin-top: 1.25rem;
+        margin-right: 0;
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.875rem;
+        font-weight: 500;
+        text-align: center;
+        height: 2.5rem;
+    }
+}
+
 .body-container {
     margin-top: 5rem;
     position: relative;
 }
 
 /* first content */
+.first-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 .first-content .first-content-desc {
     padding: 0.625rem 2.5rem;
@@ -356,6 +409,7 @@ ul{
 .first-content h2 {
     margin-bottom: 3.125rem;
 }
+
 .first-content h3{
     width: 100%;
 }
@@ -407,7 +461,6 @@ ul{
 }
 
 .fourth-content .fourth-widget-content {
-    display: flex;
     margin-right: auto;
     margin-left: auto;
     position: relative;
@@ -415,9 +468,12 @@ ul{
 
 .fourth-widget-content .fourth-widget{
     padding: 1rem;
-    width: 16.666%;
     
 }
+.fourth-widget-content .fourth-widget-clear{
+    padding:1rem;
+}
+
 .fourth-widget img{
     filter:brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
     margin:auto;
@@ -428,6 +484,7 @@ ul{
     box-shadow: none;
     justify-content: center;
 }
+
 .fourth-widget img:hover{
     filter: none;
 }
@@ -448,6 +505,31 @@ ul{
 }
 /* Mobile */
 @media (max-width: 768px) {
+}
+
+/* Mobile 2 */
+@media (max-width: 544px) {
+
+    /* First Content */
+    .first-content h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1.875rem;
+    }
+    .first-content .first-content-desc{
+        line-height: 1.875rem;
+    }
+
+    .fourth-widget-content .fourth-widget{
+       
+        width: 50%;
+    }
+
+    .fourth-widget-content .fourth-widget-clear{
+        display: none;
+    }
+    
+    
 }
 
 /* course header */
@@ -739,6 +821,7 @@ ul{
 
 /* Mobile */
 @media (max-width: 1024px) {
+
     /* Course Header */
     .course-header-image {
         min-height: 446px;
@@ -830,7 +913,6 @@ ul{
     
     .fourth-course-button {
         width: 80%;
-        border-radius: 20px;
         margin-left: 0;
         padding: 0.625rem 0.5rem;
     }
@@ -843,14 +925,9 @@ ul{
 
     .fifth-course-button {
         width: 18%;
-        border-radius: 20px;
-        margin-top: 0.9375rem;
         margin-left: auto;
         margin-right: auto;
         padding: 0.625rem 0.5rem;
-        color: #fff;
-        background-color: #e48800;
-        text-align: center;
     }
 
 }
@@ -873,11 +950,7 @@ ul{
 
     .second-left-button {
         width: 50%;
-        border-radius: 20px;
         padding: 0.6rem 0.5rem;
-        color: #fff;
-        background-color: #e48800;
-        text-align: center;
     }
 
     /* Fourth Course */
@@ -892,8 +965,6 @@ ul{
 
     .fourth-course-button {
         width: 100%;
-        border-radius: 20px;
-        margin-left: 0;
         padding: 0.625rem 0.5rem;
     }
 
@@ -904,20 +975,143 @@ ul{
     }
     .fifth-course-button {
         width: 30%;
-        border-radius: 20px;
-        margin-top: 0.9375rem;
-        
-        padding: 0.5rem 2rem;
-        color: #fff;
-        background-color: #e48800;
-        text-align: center;
+        padding: 0.5rem 2rem 0;
     }
     
 }
 
+/* Mobile */
+@media (max-width: 544px) {
+    .course-header-image {
+        min-height: 574.250px;
+      
+    }
+
+    .course-container {
+        width: 100%;
+        padding-top: 25%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* Course Header */
+    .course-container .head-header .course-header-text {
+        padding:0 11%;
+        font-size: 30px;
+      
+    }
+
+    .course-head-desc {
+        margin: 1.25rem 11%;
+        padding:0;
+    }
+
+    /* First Course */
+    .first-course-header {
+        
+        margin-top: 2rem;
+        padding: 0 8% 10% 8%;
+        text-align: center;
+    }
+    
+    .first-course-header h4 {
+        font-size: 1.875rem;
+        line-height: 2.375rem;
+    }
+    
+    .first-course-button {
+        width: 35%;
+        border-radius: 20px;
+        margin : 0 auto;
+        padding: 0.25rem 1rem;
+        color: #fff;
+        background-color: #e48800;
+        text-align: center;
+    }
+
+    .first-course-image{
+        margin-left:0px;
+        margin-top:50px;
+        width: 379px;
+        height: 217px;
+    }
+
+    /* Second Course */
+    .second-course-top{
+        flex-direction: column-reverse;
+    }
+
+    .second-course .second-course-left {
+        padding: 0 2.5rem;
+    }
+
+    .second-course .second-course-left .second-left-header {
+        padding-top: 1.5rem;
+    }
+
+    .second-left-button {
+        margin-bottom: 3.125rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 20px;
+        padding: 0.3125rem 0.5rem;
+        color: #fff;
+        background-color: #e48800;
+        text-align: center;
+    }
+
+    .second-course-right img{
+        width: 423.578px;
+        height: 462.250px;
+    }
+
+    .second-course .second-course-right{
+        padding: 3.125rem 0 0 1.6rem;
+    }
+
+    .second-course-right img{
+        width: 331px;
+        height: 361px;
+    }
+
+    /* Fourth Course */
+    .fourth-course .fourth-course-left {
+      
+        padding-right: 0;
+        padding-bottom: 3.125rem;
+        text-align: center;
+    }
+
+    .fourth-course .fourth-course-right {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 0;
+    }
+
+    .fourth-course-button {
+        width: 100%;
+        border-radius: 20px;
+        margin-left: 0;
+        padding: 0.3125rem 0.5rem;
+    }
+
+     /* Fifth Course */
+     .fifth-course-img{
+        width: 379px;
+        height: 74px;
+    }
+    .fifth-course-button {
+        width: 50%;   
+        padding: 0.3215rem 0.5rem;
+      
+    }
+
+
+
+}
+
 /* List Course */
-
-
 .filter-course {
     width: 100%;
     padding: 3.125rem 0;
@@ -1001,6 +1195,14 @@ ul{
     font-weight: 700;
 }
 
+.detail-body-header{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.25rem;
+    color: #36414d;
+    padding-bottom:1rem;
+}
+
 
 .detail-button {
     width: 20%;
@@ -1011,8 +1213,31 @@ ul{
     margin-right: auto;
     padding: 1rem 2.5rem;
     color: #fff;
-    background-color: rgb(224 124 4);
+    background-color: #E07C04;
     text-align: center;
+}
+
+.detail-button span{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+
+/* First Detail */
+.first-detail{
+   
+    padding-bottom:5rem;
+    max-width: 590px;
+}
+.first-detail .first-detail-desc{
+    font-family: "Raleway", sans-serif;
+    line-height: 1.5rem;
+    color: #36414d;
+}
+
+/* Second Detail */
+
+.materi-course{
+    padding: 0 20%;
 }
 
 .start-button {
@@ -1020,6 +1245,54 @@ ul{
     background-color: #e48800;
 }
 
+/* THird Detail */
+.third-detail{
+    padding: 5rem 0 3.125rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-wrap: wrap;
+    max-width: 960px;
+    
+}
+
+.third-detail-header{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #36414d;
+}
+
+.third-detail-left{
+    padding: 0;
+    width: calc(50% - 12px);
+    margin-right:12px;
+}
+
+.third-detail-left img{
+    width: 100%;
+    display: block;
+}
+
+.third-detail-right{
+    width: calc(50% - 12px);
+    margin-left:12px;
+}
+
+.third-detail-right .third-detail-right-desc{
+    font-family: "Raleway", sans-serif;
+    color: #36414d;
+    line-height: 1.5rem;
+}
+
+/* Laptop */
+@media (max-width: 1024px) {
+    .materi-course{
+        padding: 0 0;
+    }
+
+}
 /* Mobile */
 @media (max-width: 768px) {
 
@@ -1034,22 +1307,85 @@ ul{
         text-align: center;
         color: #fff;
     }
-    .detail-container h1{
 
-    }
     
     .detail-button {
         width: 20%;
-        height: 10%;
-        border-radius: 25px;
-        margin-top: 3.125rem;
+        padding: 1rem 0.5rem;
+    }
+
+  
+}
+
+/* Mobile 2 */
+@media (max-width: 544px) {
+
+    /* Detail Container */
+    .detail-header-image{
+        height: 620.688px;
+    }
+    
+    .detail-container h1{
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 4.5rem;
+    }
+
+    .detail-container p{
+        padding: 1rem 0;
         margin-left: auto;
         margin-right: auto;
-        padding: 1rem 1rem;
-        color: #fff;
-        background-color: rgb(224 124 4);
-        text-align: center;
     }
+
+    .detail-button {
+        width: 70%;
+        height: 10%;
+        
+      
+    }
+
+      /* First Detail */
+    .first-detail{
+        margin: 0;
+        padding-left:1rem;
+        padding-right:1rem;
+    }
+
+    /* Third Detail */
+    .third-detail{
+        padding: 5rem 0 3.125rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        flex-wrap: nowrap;
+        max-width: 100%;
+        
+    }
+    
+    .third-detail-left{
+        padding: 0;
+        width: calc(50% - 12px);
+        margin-right:12px;
+    }
+    
+    .third-detail-left img{
+        width: 100%;
+        display: block;
+    }
+    
+    .third-detail-right{
+        width: 100%;
+        margin-left:0;
+        padding: 3.125rem 1.25rem 0 1.25rem;
+        padding-top:3.125rem;
+        padding-left:1.25rem;
+        padding-right: 1.25srem;
+        
+    }
+
+
 }
 
 .countainercarousel {
@@ -1162,7 +1498,16 @@ ul{
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 544px) {
+
+
+    .footer-content {
+      
+        padding-left:1.6rem;
+        padding-right: 20%;
+        text-align: left;
+    }
+
 }
 
 /* 
