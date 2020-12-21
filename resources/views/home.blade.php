@@ -8,7 +8,7 @@
         <div class="header-image" style="background-image:url('{{asset('image/homepage.jpg')}}');">
             <div class="overlay" style="background-image: linear-gradient(110deg, #00256C 10%, #04ACA4 90%);"></div>
 
-            <nav class="navbar navbar-expand-lg navbar-dark absolute-top nav-content">
+            <nav class="navbar navbar-expand-md navbar-dark absolute-top nav-content">
                 <div class="container">
                     <a class="navbar-brand" href="#">
                         <img src="{{asset('image/refactorylogo.png')}}" alt="" width="125" height="52">
@@ -87,7 +87,7 @@
                         <div id="partnerCarousel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item no-gutters active pt-2">
-                                    <div class="d-flex justify-content-between">
+                                    <div class="row d-flex justify-content-between">
                                         <div class="mr-5" class="carousel-icon">
                                             <img src="{{asset('image/gojek.png')}}" alt=""  style="object-fit:contain;">
                                         </div>
@@ -110,7 +110,7 @@
 
                                 </div>
                                 <div class="carousel-item no-gutters ">
-                                    <div class="d-flex justify-content-between">
+                                    <div class="row d-flex justify-content-between">
                                         <div class="mr-5" class="carousel-icon">
                                             <img src="{{$partner_data[0]['photo_url']}}" alt="" style="object-fit:contain;">
                                         </div>
