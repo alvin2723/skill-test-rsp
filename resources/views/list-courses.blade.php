@@ -19,10 +19,10 @@
                             <a href="/courses">Courses</a>
                         </li>
                         <li class="nav-item navbar-course-right">
-                            <a href="#">Road Map</a>
+                            <a href="https://enroll.refactory.id/roadmap">Road Map</a>
                         </li>
                         <li class="nav-item navbar-course-right">
-                            <a href="#">Login</a>
+                            <a href="https://course.refactory.id/sign_in">Login</a>
                         </li>
                         <li class="nav-item ">
                             <a type="button" class="btn btn-lg btn-sign-up" id="header-sign-up-btn" href="https://enroll.refactory.id">
@@ -43,7 +43,44 @@
         <div class="container filter-course mb-4">
             <div class="d-flex justify-content-between">
                 <div class="col-md-4 col-sm-12">
-                    Category: All
+                    Category:
+                    <div class="dropdown" style="display: inline-block">
+                        <button class="btn btn-secondary dropdown-toggle orange-text bg-transparent border-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          All
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">All</a>
+                          <a class="dropdown-item" href="#">Web Frontend (1)</a>
+                          <a class="dropdown-item" href="#">Backend (6)</a>
+                          <a class="dropdown-item" href="#">PHP (3)</a>
+                          <a class="dropdown-item" href="#">Python (3)</a>
+                          <a class="dropdown-item" href="#">REST API (2)</a>
+                          <a class="dropdown-item" href="#">JavaScript (1)</a>
+                          <a class="dropdown-item" href="#">Node.Js (1)</a>
+                          <a class="dropdown-item" href="#">CLI (2)</a>
+                          <a class="dropdown-item" href="#">Git (2)</a>
+                          <a class="dropdown-item" href="#">Fundamental (5)</a>
+                          <a class="dropdown-item" href="#">Markup (1)</a>
+                          <a class="dropdown-item" href="#">Documentation (1)</a>
+                          <a class="dropdown-item" href="#">Database (1)</a>
+                          <a class="dropdown-item" href="#">NOSQL (1)</a>
+                          <a class="dropdown-item" href="#">Vim (1)</a>
+                          <a class="dropdown-item" href="#">Code Editor (1)</a>
+                          <a class="dropdown-item" href="#">Programming Language (2)</a>
+                          <a class="dropdown-item" href="#">Backend Framework (4)</a>
+                          <a class="dropdown-item" href="#">Microsesrvices (2)</a>
+                          <a class="dropdown-item" href="#">Mobile Dev Basic (6)</a>
+                          <a class="dropdown-item" href="#">Hybrid Application (2)</a>
+                          <a class="dropdown-item" href="#">Frontend (3)</a>
+                          <a class="dropdown-item" href="#">Frontend Framework (5)</a>
+                          <a class="dropdown-item" href="#">Devops (2)</a>
+                          <a class="dropdown-item" href="#">Kotlin (4)</a>
+                          <a class="dropdown-item" href="#">Android (4)</a>
+                          <a class="dropdown-item" href="#">Desktop (1)</a>
+                          <a class="dropdown-item" href="#">Discussion (2)</a>
+                          <a class="dropdown-item" href="#">QA (2)</a>
+                        </div>
+                      </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <form method="GET" action="/filter-course">

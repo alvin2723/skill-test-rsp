@@ -10,7 +10,7 @@
 
             <nav class="navbar navbar-expand-md navbar-dark absolute-top nav-content">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="/home">
                         <img src="{{asset('image/refactorylogo.png')}}" alt="" width="125" height="52">
                         </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,10 +25,10 @@
                                 <a class="nav-link" href="/courses">Courses</a>
                             </li>
                             <li class="nav-item navbar-right">
-                                <a class="nav-link" href="#">Custom Trainings</a>
+                                <a class="nav-link" href="https://refactory.id/custom-trainings/">Custom Trainings</a>
                             </li>
                             <li class="nav-item navbar-right">
-                                <a class="nav-link" href="#">Case Studies</a>
+                                <a class="nav-link" href="https://refactory.id/case-studies/">Case Studies</a>
                             </li>
                             <li class="nav-item navbar-right">
                                 <a class="nav-link" href="/blog">Blog</a>
@@ -57,14 +57,14 @@
                             </div>
                             <div class="row head-button">
                                 <div class="col-md-6 col-sm-12">
-                                    <a href="" type="button" class="btn-left">
+                                    <a href="https://refactory.id/contact/" type="button" class="btn-left">
                                         <span>
                                             Temukan Solusi Anda
                                         </span>
                                     </a>
                                 </div>
                                 <div class="col-md-6 col-sm-12">
-                                    <a href="" type="button" class="btn-right">
+                                    <a href="https://enroll.refactory.id/?_ga=2.247431172.122677503.1608426137-249682499.1608426137" type="button" class="btn-right">
                                         <span>
                                             Tingkatkan Skill Anda
                                         </span>
@@ -187,7 +187,7 @@
 
             {{-- Third Content --}}
         <div class="container third-content">
-            <a href="" class="third-content-link">Lihat Semua <i aria-hidden="true" class="fas fa-arrow-right"></i></a>  
+            <a href="/blog" class="third-content-link">Lihat Semua <i aria-hidden="true" class="fas fa-arrow-right"></i></a>  
         </div>
 
             {{-- Fourth Content --}}

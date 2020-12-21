@@ -10,7 +10,7 @@
 
             <nav class="navbar navbar-expand-lg navbar-dark absolute-top nav-content">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="/home">
                         <img src="{{asset('image/refactorylogo.png')}}" alt="" width="125" height="52">
                         </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,7 +64,7 @@
                                     </a>
                                 </div>
                                 <div class="col-md-6 col-sm-12">
-                                    <a href="" type="button" class="btn-right">
+                                    <a href="https://enroll.refactory.id/?_ga=2.248808839.122677503.1608426137-249682499.1608426137" type="button" class="btn-right">
                                         <span>
                                             Pelajari Lebih
                                         </span>
@@ -90,7 +90,7 @@
                         <h4>Bagaimana Refactory Course membantu <span class="orange-text">meningkatkan skill</span> anda</h4>
                     </div>
                     <div class="first-course-button">
-                        <a href="" type="button" class="btn-link">
+                        <a href="https://enroll.refactory.id/?_ga=2.138193968.122677503.1608426137-249682499.1608426137" type="button" class="btn-link">
                             <span>
                                 Pelajari Lebih
                             </span>
@@ -131,7 +131,7 @@
                             </p>
                         </div>
                         <div class="second-left-button">
-                            <a href="" type="button" class="btn-link">
+                            <a href="https://enroll.refactory.id/?_ga=2.138193968.122677503.1608426137-249682499.1608426137" type="button" class="btn-link">
                                 <span>
                                     Daftar Sekarang
                                 </span>
@@ -229,7 +229,7 @@
                     </div>
                     <div class="col-lg-5 col-sm-12  fourth-course-right">
                         <div class="fourth-course-button">
-                            <a href="" type="button" class="btn-link">
+                            <a href="https://enroll.refactory.id/?_ga=2.138193968.122677503.1608426137-249682499.1608426137" type="button" class="btn-link">
                                 <span>
                                     Daftar Sekarang
                                 </span>
@@ -249,7 +249,7 @@
             <div class="fifth-course-bottom">
                 <img src="{{asset('image/langkah.png')}}" alt="" class="fifth-course-img">
                 <div class="fifth-course-button">
-                    <a href="" type="button" class="btn-link">
+                    <a href="https://enroll.refactory.id/?_ga=2.138193968.122677503.1608426137-249682499.1608426137" type="button" class="btn-link">
                         <span>
                             Pelajari Lebih
                         </span>

@@ -43,13 +43,15 @@
                             <a href="/courses">Courses</a>
                         </li>
                         <li class="nav-item navbar-course-right">
-                            <a href="#">Road Map</a>
+                            <a href="https://enroll.refactory.id/roadmap">Road Map</a>
                         </li>
                         <li class="nav-item navbar-course-right">
-                            <a href="#">Login</a>
+                            <a href="https://course.refactory.id/sign_in">Login</a>
                         </li>
-                        <li class="nav-item navbar-course-right">
-                            <a href="#">Sign Up</a>
+                        <li class="nav-item ">
+                            <a type="button" class="btn btn-lg btn-sign-up" id="header-sign-up-btn" href="https://enroll.refactory.id">
+                                Sign Up
+                            </a>
                         </li>
                     </ul>
                 </div>
