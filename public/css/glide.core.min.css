@@ -48,7 +48,8 @@
 }
 .glide__bullets{
     -webkit-touch-callout:none;
-    user-select:none
+    user-select:none;
+    transition: 1s;
 }
 .glide--rtl{
     direction:rtl

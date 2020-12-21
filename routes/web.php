@@ -28,3 +28,4 @@ Route::get('/list-courses', 'ListCourseController@index')->name('list-courses');
 Route::get('/detail-course', 'DetailCourseController@index')->name('detail-course');
 
 Route::get('/blog', 'BlogController@index');
+Route::get('/becomeprogrammer', 'BecomeprogrammerController@index');
