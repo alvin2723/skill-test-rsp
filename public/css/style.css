@@ -1512,3 +1512,121 @@ ul{
 
 /* 
 slider bot */
+
+.hub-dex{
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #e48800;
+    line-height: 18px;
+}
+
+.ikut-dex{
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #000000;
+    line-height: 28px;
+}
+
+.subju1{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #e48800;
+    line-height: 30px; 
+}
+.subju2{
+    font-size: 28px;
+    font-family: "Raleway", sans-serif;;
+    font-weight: 400;
+    color: #373c44;
+    line-height: 34px; 
+}
+
+.subju3{
+    font-size: 24px;
+    font-family: "Raleway", sans-serif;;
+    font-weight: 400;
+    color: #373c44;
+    line-height: 34px; 
+}
+.isi{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;;
+    font-weight: 400;
+    color: #7a8189;
+    line-height: 30px; 
+}
+.bacaAr{
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;;
+    font-weight: 600;
+    color: #e89a01;
+    line-height: 19px; 
+}
+
+.artpop{
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;;
+    font-weight: 500;
+    color: #e48800;
+    line-height: 16px; 
+}
+.engi{
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #e48800;
+    line-height: 22px; 
+}
+
+.engi-desc{
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;;
+    font-weight: 400;
+    color: #373c44;
+    line-height: 34px; 
+}
+
+.ArtUn{
+    font-size: 28px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #212529;
+    line-height: 28px; 
+}
+
+.grocu{
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    color: #e48800;
+    line-height: 17px; 
+}
+
+.isi2{
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    color: #666666;
+    line-height: 28px;  
+}
+
+.artter{
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: #e48800;
+    line-height: 14px;  
+}
+
+.btn-icon{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 7%;
+    background-color: white;
+    
+}

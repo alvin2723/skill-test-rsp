@@ -18,6 +18,7 @@
     <link href="{{ asset('css/glide.core.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/glide.theme.min.css') }}" rel="stylesheet">
 
+
 </head>
 
 <body>
@@ -31,14 +32,14 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script>
     <script type="text/javascript">
         $(".carousel").swipe({
-            swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+            swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
                 if (direction == 'left') $(this).carousel('next');
                 if (direction == 'right') $(this).carousel('prev');
             },
-            allowPageScroll: "vertical" 
+            allowPageScroll: "vertical"
         });
     </script>
-   
+
 </body>
 
 </html>
